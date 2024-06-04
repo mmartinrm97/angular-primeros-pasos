@@ -1,0 +1,6 @@
+{
+  "material-icon-theme.activeIconPack": "angular",
+  "files.watcherExclude": {
+    "**/target": true
+  }
+}
