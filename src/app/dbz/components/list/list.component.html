@@ -21,6 +21,8 @@
       <strong>Power: </strong>
       <span>{{ character.power }}</span>
     </div>
-    <button (click)="emitDeleteCharacter(i)" class="btn btn-danger">X</button>
+    <button (click)="emitDeleteCharacter(character.id)" class="btn btn-danger">
+      X
+    </button>
   </li>
 </ul>
