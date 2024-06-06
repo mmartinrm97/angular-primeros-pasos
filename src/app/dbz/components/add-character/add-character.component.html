@@ -1,20 +1,26 @@
 <h4>Aregar Personaje</h4>
 
-<form action="" class="row">
+<form action="" (ngSubmit)="emitCharacter()" class="row">
   <input
     type="text"
+    [(ngModel)]="character.name"
     class="form-control mb-2"
-    name=""
+    name="name"
     id=""
     placeholder="Nombre"
   />
   <input
     type="number"
+    [(ngModel)]="character.power"
     class="form-control mb-2"
-    name=""
+    name="power"
     id=""
+    min="1000"
+    max="10000"
     placeholder="Poder"
   />
 
   <button type="submit" class="btn btn-primary">Agregar</button>
+
+  <!-- <pre>{{ character | json }}</pre> -->
 </form>
